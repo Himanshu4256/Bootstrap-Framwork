@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>
+            Bootstrap Tabs
+        </title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<style type="text/css">
+
+    </style>
+    </head>
+    <body>
+        <div class="container">
+            <h2 class="py-3 text-center">Bootstrap Tabs</h2>
+            <div class="row py-3 justify-content-center">
+                <div class="col-md-6">
+                    <ul class="nav nav-tabs" id=" myTab">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#home">
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#profile"> <!--data-toggle is a attribute-->
+                                Profile
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#contact">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="tab-contant py-3" id="myTabContant">
+                        <div class="tab-pane fade show active" id="home">
+                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, illum!
+                        </div>
+                        <div class="tab-pane fade" id="profile">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, eos. Sequi odio neque esse sunt nostrum nisi, minus dolores fuga, recusandae incidunt, porro mollitia assumenda ullam accusantium reiciendis velit. Ut.
+                        </div>
+                        <div class="tab-pane fade" id="contact">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet maxime aliquid laboriosam facere. Libero ipsa enim neque rerum ullam, dicta alias vitae est aperiam molestias magni, et ab excepturi quia odit itaque soluta. Quisquam veritatis dolore architecto illum excepturi? Quibusdam.
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-6">
+                    <ul class="nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="pill" href="#home1">
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="pill" href="#profile1"> 
+                                Profile
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="pill" href="#contact1">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="tab-contant py-3" id="myTabContant">
+                        <div class="tab-pane fade show active" id="home1">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, illum!
+                        </div>
+                        <div class="tab-pane fade" id="profile1">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, eos. Sequi odio neque esse sunt nostrum nisi, minus dolores fuga, recusandae incidunt, porro mollitia assumenda ullam accusantium reiciendis velit. Ut.
+                        </div>
+                        <div class="tab-pane fade" id="contact1">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet maxime aliquid laboriosam facere. Libero ipsa enim neque rerum ullam, dicta alias vitae est aperiam molestias magni, et ab excepturi quia odit itaque soluta. Quisquam veritatis dolore architecto illum excepturi? Quibusdam.
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <div class="row">
+                <div class="col-3">
+                    <ul class="nav nav-pills flex-column" id="Vertical-tab">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="pill" href="#home2">
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="pill" href="#profile2"> <!--data-toggle is a attribute-->
+                                Profile
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="pill" href="#contact2">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-9">
+                    <div class="tab-contant py-3" id="Vertical-tabContent">
+                        <div class="tab-pane fade show active" id="home2">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, illum!
+                        </div>
+                        <div class="tab-pane fade" id="profile2">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium, eos. Sequi odio neque esse sunt nostrum nisi, minus dolores fuga, recusandae incidunt, porro mollitia assumenda ullam accusantium reiciendis velit. Ut.
+                        </div>
+                        <div class="tab-pane fade" id="contact2">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet maxime aliquid laboriosam facere. Libero ipsa enim neque rerum ullam, dicta alias vitae est aperiam molestias magni, et ab excepturi quia odit itaque soluta. Quisquam veritatis dolore architecto illum excepturi? Quibusdam.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

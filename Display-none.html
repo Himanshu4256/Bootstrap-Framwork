@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Hide diplay from phone</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <style> 
+    	.container{
+    		border: 5px solid black;
+    	}
+    	.row{
+    		border: 3px solid red;
+    	}
+    	.pink{
+    		background: pink;
+    		
+    	}
+    	.orange{
+    		background: orange;
+    		
+    	}
+    	.green{
+    		background: yellowgreen;
+    		
+    	}
+    	.blue{
+    		background: blue;
+    	}
+    </style>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3 pink"><h2>Col A</h2>Google Maps Timeline shows an estimate of places that you may have been and routes</div>
+		
+		    <div class="col-md-3 d-none d-sm-block green"><h2>Col B</h2>Google Maps Timeline shows an estimate of places that you may have been and routes</div> <!-- "d-none" hide this div & d-sm-block- ye small & usse upr use bolck krke rakega(show krega) 
+		    	nono-hide -->
+		
+		     <div class="col-md-3 blue"><h2>Col C</h2>Google Maps Timeline shows an estimate of places that you may have been and routes</div>
+
+		     <div class="col-md-3 d-block d-sm-none orange"><h2>Col D</h2>Google Maps Timeline shows an estimate of places that you may have been and routes</div> <!-- ye mobile pr show krega and laptop pr hide -->
+        </div>
+    </div>
+
+
+ <h2>Display flex in bootstrap 👇🏻</h2>
+
+    <div class="container mt-3">
+			<div class="d-flex" style="border: 3px solid blue;">
+		
+		    <div class=" order-3 pink p-3">Col A</div> 
+		
+		     <div class="order-2 green p-3">Col B</div>
+		     <div class="order-1 orange p-3">Col B</div>
+        </div>
+    </div>
+
+</body>
+</html>

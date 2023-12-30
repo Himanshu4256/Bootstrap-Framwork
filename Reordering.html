@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Reordring in divs</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<style type="text/css">
+.container{
+	border: 3px solid black;
+}
+.row{
+	border: 2px solid red;
+}
+.orange{
+	background: orange;
+}
+.pink{
+	background: pink;
+}
+.blue{
+	background: blue;
+}
+.green{
+	background: green;
+}
+
+</style>
+</head>
+<body>
+  <div class="container">
+  	<div class="row">
+  		<div class="col orange">Col 1</div>
+  		<div class="col pink">Col 2</div>
+  		<div class="col blue">Col 3</div>
+  		<div class="col green">Col 4</div>
+  	</div>
+
+  	<div class="row">
+  		<div class="col order-last orange">Col 1</div>
+  		<div class="col pink">Col 2</div>
+  		<div class="col order-first blue">Col 3</div>
+  		<div class="col green">Col 4</div>
+  	</div>
+
+  	<div class="row">
+  		<div class="col order-md-last orange"> (Do Inspect) Col 1</div>
+  		<div class="col pink">Col 2</div>
+  		<div class="col order-md-first blue">Col 3</div>
+  		<div class="col green">Col 4</div>
+  	</div>
+  </div>
+
+  <!-- Now, Hamne abhi tak first & last use kiya ab ham (1,2,3,4)(saperatly) use krenge. -->
+
+    <div class="container" style="margin-top: 2px;">
+  	<div class="row">
+  		<div class="col orange">Col 1</div>
+  		<div class="col pink">Col 2</div>
+  		<div class="col blue">Col 3</div>
+  		<div class="col green">Col 4</div>
+  	</div>
+
+  	<div class="row">
+  		<div class="col order-2 orange">Col 1</div>
+  		<div class="col order-3 pink">Col 2</div>
+  		<div class="col order-4 blue">Col 3</div>
+  		<div class="col order-1 green">Col 4</div>
+  	</div>
+  </div> 
+</body>
+</html>

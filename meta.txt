@@ -1,0 +1,138 @@
+<meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
+
+viewport-> THERE IS LOTS OF NAME so ye name define krta hai ki jo meta tag bna rahe hai wo kis cheez se related bna rahe hai.
+
+
+
+width=device-width-> yha Ham btate hai ki jo bhi content hai wo device ki width k andar hi rahe.
+
+
+initial-scale=1 -> esme hm zoom level ko set krte hai mobile ya tablet pr.
+
+shrink-to-fit=no" -> jb hm koi bhi website ko mobile m open krte hai to wo bahut shrink(chota) ho jata hai to use stop krne k liye hm eska use krte hai.
+
+
+
+➤ HOW TO MAKE WEBSITE LAYOUT WITH BOOTSTRAP ?
+     
+    	It consist 3 classes 
+	● Container
+	● Row 
+	● Col
+
+"COL class make equal widhth of div tag"
+
+Layout Classes Sequence -> (1) .container{parent} (2) .row{child} (3) .col{Leaf}
+
+* Offset Class for different Break Point
+  ======================================
+
+Extra Large OO-> offset-xl-*
+==============
+Large OO-> offset-lg-*
+==============
+Medium OO-> offset-md-*
+==============
+Small OO-> offset-sm-*
+==============
+Extra Small oo->
+
+
+* Reordring DIVs
+  ==============
+Extra Large OO-> .order-xl-first, .order-xl-last
+==============
+Large OO-> .order-lg-first, .order-lg-last
+==============
+Medium OO-> .order-md-first, .order-md-last
+==============
+Small OO-> .order-sm-first, .order-sm-last
+==============
+Extra Small oo->
+AGR KOI BHI SCREEN HO OR ORDER FIX KRNA HO TO --> .order-first, .order-last
+
+
+* Reordering classes for different Break Points
+  =============================================
+
+Extra Large OO-> .order-xl-*
+==============
+Large OO-> .order-lg-*
+==============
+Medium OO-> .order-mg-*
+==============
+Small OO-> .order-sm-*
+==============
+Extra Small oo->
+
+* Bootstrap Margin Classes
+  ========================
+
+(1)- .m-auto -> div ko center m kregi 
+(2)- .ml-auto -> ml(margin left) ye automatically left margin dega 
+(3)- ..mr-auto -> mr(margin right) eske through hm do div k bich m bhi margin lga skte hai.
+
+
+* Margin Auto Classes for different Break Points
+  ==============================================
+
+Extra Large OO-> .m-xl-auto
+==============
+Large OO-> .m-lg-auto
+==============
+Medium OO-> .m-md-auto
+==============
+Small OO-> .m-sm-auto
+==============
+Extra Small oo->
+
+
+Margin -> .m-*.     		0|0px
+Margin-right -> .mr-*		1|0.25rem
+Margin-left -> .ml-*		2|0.50rem
+Margin-top -> .mt-*		3|1rem
+Margin-bottom -> .mb-*		4|1.5rem
+				5|3rem
+
+
+mx-> dono side margin dega mx-*
+my-> upr niche margin dega my-*
+
+
+* Bootstrap Padding Classes 
+  =========================
+
+Padding -> .p-*			0|0px
+Padding-right -> .pr-*		1|0.25rem
+Padding-left -> .pl-*		2|0.50rem
+Padding-top -> .pt-*		3|1rem
+Padding-bottom -> .pb-*		4|1.5rem
+				5|3rem
+only we can give "0-5"
+
+
+* vertical Alignment classes
+  ==========================
+
+.align-items-start-> ye upr se allign kregi
+.align-items-end-> ye bottom se align hoga
+.align-items-center-> works in center
+.align-items-stretch-> ye all divs ki height same rakhegi
+.align-items-baseline-> esme sbki first base line same hogi but ye font size k acc. divs ka size degi.
+
+in Bootstrap limitations-
+margin-5
+padding-5
+width-50
+
+IF WE WANT TO REMOVE PADDING & MARGIN THEN WE USE- ".no-gutters"
+
+CONTAINER KO BY DEFAULT WIDTH-> 1140px
+
+In HTML Address tag ka use ham wha krte h jb kisi ki location and kisi k bare m btana hota h
+============================================================================================
+
+In Bootstrap we have two types of families which is -> font-family-sans-serif: [Ye defalut m hoti hai hai]
+						    font-family-monospace: [ ese use krna dekhe Text_formatting.html k ander] 
+
+

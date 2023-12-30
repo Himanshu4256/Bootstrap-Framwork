@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>
+            Bootstrap Card Classes 
+        </title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+<!-- Jquery CDN path (Go to jQuery.com->Download jquery-> thoda scroll-> Using jQuery with a CDN
+-> uski theory mai  "https://code.jquery.com" ye link milega-> jQuery 3.x-. minified)-->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script>
+    $(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+        $('#example').tooltip({
+            html : true,
+            delay : {"show":1000,"hide":1000},
+            placement : "bottom",
+            title : "<img src='happy.png'><h2>Tootip <br>Goes Here</h2>",
+            offset : "50"
+        });
+        $('#answer').tooltip({
+            html : true,
+            title : "<img src='happy.png'><h2>Tootip <br>Goes Here</h2>",
+            trigger : "click",
+            
+        })
+        
+    });
+
+    $(function(){
+        $('#showbtn').click(function(){
+            $("#examples").tooltip('show');
+            
+        });
+        $('#hidebtn').click(function(){
+            $("#examples").tooltip('hide');
+        });
+        $('#hidebtns').click(function(){
+            $("#examples").tooltip('toggle');
+        });
+        $('#enablez').click(function(){
+            $("#answerz").tooltip('enable');
+        });
+        $('#disablez').click(function(){
+            $("#answerz").tooltip('disable');
+        });
+        $('#enabled').click(function(){
+            $("#answerz").tooltip('toggleEnabled');
+        });
+
+    });
+    $(function(){
+        $("#answersd").on('show.bs.tooltip',function(){
+            alert("show");
+        });
+    });
+</script><!-- 1000 milisecond = 1second-->
+
+<style type="text/css">
+
+    </style>
+    </head>
+    <body>
+        <h3 class="text-center">Tooltip use krne k liye jquery ka CDN path jaruri hota hai</h3>
+<div class="container mb-5">
+    <h2 class="py-3 text-center">Bootstrap Tooltips</h2>
+    <div class="row py-3">
+    <div class="col">
+        <button class="btn btn-primary" data-placement="right" title="Tootip Goes Here" data-toggle="tooltip">Tooltip 1</button><!-- data-toggle ye Attribute lena jaruri h agr aap html k kisi bhi tag pr ese use krna chate h-->
+        <button class="btn btn-primary" data-placement="right" title="<h2>Tootip <br>Goes Here</h2>" data-toggle="tooltip">Tooltip</button>
+    </div><div class="mt-3">
+        <button class="btn btn-primary" id="example" >Tooltip </button><!-- This is for perticular button using id selector-->
+        <!-- html : true)-> ye jo title k ander html likhi hui h use active kr deta hai-->
+        <button class="btn btn-primary" id="answer" >Tooltip</button>
+    </div>
+    </div>    
+</div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <button class="btn btn-primary" id="examples" title= "<img src='happy.png'><h2>Tootip <br>Goes Here</h2>">Tooltip</button>
+                <button class="btn btn-danger" id="showbtn">show</button>
+                <button class="btn btn-danger" id="hidebtn">Hide</button>
+                <button class="btn btn-danger" id="hidebtns">Toggle</button>
+            </div>
+                <div class="col-md-4">
+                <button class="btn btn-primary" id="answerz" title= "<img src='happy.png'><h2>Tootip <br>Goes Here</h2>">Tooltip</button>
+                <button class="btn btn-danger" id="enablez">Enable</button> <!-- enable pr click kroge to title show hoga-->
+                <button class="btn btn-danger" id="disablez">Disable</button><!-- disable se ni hoga-->
+                <button class="btn btn-danger" id="enabled">Enabled</button> <!-- ye dono kaam ek hi button se krega -->
+                </div>
+                <div class="col-md-4">
+                    <button class="btn btn-primary" id="answersd" title= "<img src='happy.png'><h2>Tootip <br>Goes Here</h2>">Tooltip</button>
+                </div> 
+        </div>
+    </div>
+    </body>
+</html>
+
+<!--(1) 1000 milisecond = 1second
+   (2) delay : {"show":1000,"hide":1000} ye 1sec k baad title show krega & after 1 sec ktm karega 
+   (3) html : true)-> ye jo title k ander html likhi hui h use active kr deta hai
+   (4) trigger : "click")> esse jb hm button pr click krenge tabhi title show hoga
+   (5) offset : "30"]-> means jo hmare Tooltip per title ka connected arrow show hota hai usko center se hatakr side m krna
+   (6) $('#showbtn').click]-> esme ".click()" is a event hai 
+   (7) $("#examples").tooltip('toggle'); - esme toggle means usi btn se hide $& show hoga
+   (8) tooltip('dispose'); es method m agr ek baar bhi button pr click kr diya to 'title' remove ho jaega.
+   (9) 'show.bs.tooltip' is a event and .on event ko call krega 
+        BUT YE WORK NI KR RHA HAI
+    SHOW(),HIDDEN() ARE THE METHODS--> 

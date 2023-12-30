@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Media Queries</title>
+	<style type="text/css">
+		.iphone{
+			display: flex;
+			float: right;
+
+		}
+		.box{
+			background-color: red;
+			color: white;
+			font-size: 50px;
+			padding:20.5px;
+			margin: 5px;
+			padding-right:40px;
+			
+		}
+		@media only screen and (max-width:300px){
+			#box-1{
+				display: block; //block is not working due to some reason
+				background-color: violet;
+			}
+		}
+		@media only screen and (max-width:300px) and (max-width:500px)  
+		{
+			#box-2{
+				display: block;
+				background-color: cyan;
+			}
+		}
+		@media (max-width:500px) and (max-width:800px)  
+		{
+			#box-3{
+				display: block;
+				background-color: yellow;
+				color: black;
+			}
+		}
+		@media (max-width:800px) and (max-width:1000px)  
+		{
+			#box-4{
+				display: block;
+				background-color: royalblue;
+			}
+		}
+	</style>
+</head>
+<body>
+	<h1 style="text-align: center;">How To Make The Website Responsive</h1>
+<img src="iPhone-13-Pro-6.jpeg" class="iphone" alt="" height="415" width="415">
+<div class="box" id="box-1">➤I Have a iphone</div>
+<div class="box" id="box-2">➤I Have a Tablet</div>
+<div class="box" id="box-3">➤I Have a Laptop</div>
+<div class="box" id="box-4">➤I Have a computer</div>
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bootstrap custom form classes</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <style type="text/css">
+    	.container{
+    		border: 5px solid black;
+    	}
+    </style>
+</head>
+<body>
+<div class="container mb-5">
+	<h2 class="py-3 text-center">Bootstrap 4 Custom Form Classes</h2>
+	<div class="row py-3">
+		<div class="col">
+			<select class="custom-select mb-3">
+				<option value="">India</option>
+				<option value="">Russia</option>
+				<option value="">United Kingdom</option>
+				<option value=""> America</option>
+				<option value="">Nepal</option>
+
+			</select>
+			<p>Here We can select Multiple countries control dbake rakho & Multiple country select kro👇🏻</p>
+			<select class="custom-select" multiple size="3">
+				<option value="">India</option>
+				<option value="">Russia</option>
+				<option value="">United Kingdom</option>
+				<option value=""> America </option>
+				<option value="">Nepal</option>
+				<option value="">Japan</option>
+
+			</select>
+	    </div>
+	    <div class="col">
+	    	<div class="custom-control custom-checkbox">
+	    		<input type="checkbox" class="custom-control-input" id="customcheckbox1">
+	    		<label class="custom-control-label" for="customcheckbox1">Music</label>
+	    	</div>
+	    	<div class="custom-control custom-checkbox">
+	    		<input type="checkbox" class="custom-control-input" id="customcheckbox2">
+	    		<label class="custom-control-label" for="customcheckbox2">sports</label>
+	    	</div>
+	    	<div class="custom-control custom-checkbox">
+	    		<input type="checkbox" class="custom-control-input" id="customcheckbox3">
+	    		<label class="custom-control-label" for="customcheckbox3">Books</label>
+	    	</div>
+
+	    	<div class="custom-control custom-radio custom-control-inline">
+	    		<input type="radio" name="gender" class="custom-control-input" id="customcheckbox4">
+	    		<label class="custom-control-label" for="customcheckbox4">Male</label>
+	    	</div>
+	    	<div class="custom-control custom-radio custom-control-inline">
+	    		<input type="radio" name="gender" class="custom-control-input" id="customcheckbox5">
+	    		<label class="custom-control-label" for="customcheckbox5">Female</label>
+	    	</div>
+
+
+	    	<div class="custom-control custom-switch">
+	    		<input type="checkbox" class="custom-control-input" id="customcheckbox6">
+	    		<label class="custom-control-label" for="customcheckbox6">Books</label>
+	    	</div>
+	    	<div class="custom-control custom-switch">
+	    		<input type="checkbox" class="custom-control-input" id="customcheckbox7">
+	    		<label class="custom-control-label" for="customcheckbox7">Music</label>
+	    	</div>
+	    </div>
+	</div>
+	<div class="row">
+		<div class="col">
+			<input type="range" class="custom-range">
+		</div>
+		<div class="col">
+			<div class="custom-file">
+			<input type="file" class="custom-file-input">
+			<label class="custom-file-label">Choose File</label>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="row py-3">
+		<div class="col">
+			<div class="form-inline">
+				<div class="form-group">
+					<label class="sr-only">Enter Name</label>
+					<input type="text" class="form-control is-valid" placeholder="enter user name">
+					<div class="valid-feedback">Verified</div>
+				</div>
+				<div class="form-group mx-3">
+					<label class="sr-only">Enter Password</label>
+					<input type="password" class="form-control is-invalid" placeholder="enter password">
+					<div class="invalid-feedback">Please Enter valid Password</div>
+				</div>
+				<button class="btn btn-primary">Login</button>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

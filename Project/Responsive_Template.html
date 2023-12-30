@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="file:///Users/laxminarayansharma/Desktop/Bootstrap/fontawesome-free-5.15.4-web/css/all.css">
+	<meta charset="utf-8">
+	<title>Resposive design</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <style> 
+    	a:hover{
+    		text-decoration: none; /* ye ancor ki underline ko remove krega */
+    	}
+    	#Header{
+    		color: #fff;
+    		background: #e74c3c;
+    	}
+    	#logo{
+    		font-size: 2rem;
+    		margin-top: 5px;
+    	}
+    	#menu{
+    		list-style-type: none;
+    		margin: 0;
+    		padding: 0;
+    	}
+    	#menu li{
+    		display: inline-block; /*ye all ul ko single line m krega */
+    	}
+    	#menu li a{ 
+    		color: #fff;
+    		padding: 15px 10px;
+    		display: block;
+    	}
+    	#menu li a:hover{
+    		background: #c0392b;
+    	}
+    	#banner{
+    		background: url(Screenshot.jpg) no-repeat 0 0;
+    		background-size: cover; /* for responsive img */
+    	}
+    	.banner-title{
+    		padding-top: 5rem;
+    	}
+    	.banner-title h1{
+    		background: rgba(255, 255, 255, 0.8);
+    		display: inline-block; /* eski width wahi tak ho jha tak text ktm ho rha h */
+    		padding: 10px;
+    		margin: 0;
+    	}
+    	.banner-title p.lead{
+               color: #fff;
+               background: rgba(231, 76, 60, 0.7);
+               padding: 10px;
+    	}
+    	.service-box{
+    		text-align: center;
+    	}
+    	.service-box i{
+    		color: #e74c3c;
+    		font-size: 70px;
+    		margin-bottom: 15px;
+    	}
+    	.section{
+        	padding-top: 70px;
+        	padding-bottom: 70px;
+        }
+        .section h2.section-head{
+        	color: #000;
+        	text-align: center;
+        	margin-bottom: 40px;
+        }
+        .section h2.section-head:after{ 
+        	background: #e74c3c;
+        	content: " ";
+        	display: block;
+        	width: 100px;
+        	height: 3px;
+        	margin: 20px auto;
+        }
+        .section-head{
+        	text-align: center;
+        	color: white;
+        }
+
+        #testimonials{
+        	background: url(salais-brew-j1NfzPPPlx4-unsplash.jpg) no-repeat 0 0;
+        	background-size: cover;
+        	color: white;
+        }
+        .img_a{
+        	clip-path: circle();
+        	border: 4px solid white;
+        	border-radius: 250px;
+
+        }
+        .news-post img{
+        	width: 100%;
+        	margin-bottom: 10px;
+        }
+        .news-post h3{
+        	font-size: 1.35rem;
+        }
+        .news-post h3 a{
+        	color: #e74c3c;
+        }
+
+        h3.section-heads:after{ 
+        	background: white;
+        	content: " ";
+        	display: block;
+        	width: 75px;
+        	height: 2px;
+        	}
+        #social-icons{
+        		list-style: none;
+        	}
+
+
+        @media (max-width: 768px){
+        	.testimonial{
+        		text-align: center;
+        	}
+        	.footer-heading{
+        		text-align: center; 
+        	}
+        	h3.section-heads:after{
+        		margin-left: 155px;
+        	}
+        	#social-icons{
+        		margin-top: 10px;
+        	}
+        	.uutt{
+        		text-align: center;
+        	}
+        }
+
+
+    </style>
+</head>
+<body>
+	<div id="Header">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+				<h1 id="logo">$ixto <i class="fab fa-uncharted"></i> </h1>
+				</div>
+				<div class="col-md-8" style="color: black;">
+					<ul id="menu" class="float-md-right">
+						<li><a href=""> Home</a></li>
+						<li><a href=""> About Us</a></li>
+						<li><a href=""> Gallery</a></li>
+						<li><a href=""> Products</a></li>
+						<li><a href=""> Contact Us</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+
+	<div id="banner" class="py-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-lg-6">
+					<div class="banner-title">
+						<h1 class="title">Some Heading Goes Here</h1>
+						<p class="lead"> <!-- class="lead" JO BHI FONT SIZE HOGA USE THODA SA BDA KR DEGA --> A new book about 'The Office' reveals that Jim almost cheated on Pam, but John Krasinski refused to do the scene. "The Office" creator almost had Jim cheat on Pam, but John Krasinski was adamant it was a bad idea.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	
+		<div class="container section">
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="section-head"> Some Heading Goes Here</h2></div>
+					<div class="col-md-4">
+						<div class="service-box">
+							<i class="fa fa-anchor"></i>
+							<h3>Planning</h3>
+							<p>A new book about 'The Office' reveals that Jim almost cheated on Pam,</p>
+						</div>
+					</div>
+
+				<div class="col-md-4">
+						<div class="service-box">
+							<i class="far fa-chart-bar"></i>
+							<h3>Startup</h3>
+							<p>A new book about 'The Office' reveals that Jim almost cheated on Pam,</p>
+						</div>
+					</div>
+					
+				<div class="col-md-4">
+						<div class="service-box">
+							<i class="fas fa-gem"></i>
+							<h3>Success</h3>
+							<p>A new book about 'The Office' reveals that Jim almost cheated on Pam,</p>
+						</div>
+					</div>		
+			</div>
+		</div>
+	
+
+	<div id="testimonials" class="section">
+		
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h2 class="section-head text-white"> Testimonials</h2>
+					</div>
+					<div class="col-md-6">
+						<div class="testimonial">
+							<p>A new book about 'The Office' reveals that Jim almost cheated on Pam. "The Office"</p>
+							<img src="@Himanshu.jpeg" height="100" alt="" class="img_a">
+							<div class="author">Himanshu shArma</div>
+							<div class="author-company">CEO of $ixto</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="testimonial">
+							<p>When something is important enough, you do it even if the odds are not in your favor.</p>
+							<img src="Elone Musk.jpeg" height="100" class="img_a" width="100">
+							<div class="author">Elone Musk</div>
+							<div class="author-company">CEO of Tesla</div>
+					</div>
+				</div>
+			</div>
+	</div>
+</div>
+
+
+
+	<div id="news" class="section">
+		<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h2 class="section-head text-black"> Recent News </h2>
+					</div>
+					<div class="col-md-3">
+						<div class="news-post w-lg-100% w-sm-50%">
+							<img src="tim-van-der-kuip-CPs2X8JYmS8-unsplash.jpg" height="120" width="245">
+							<h3><a href="">Machine learning</a></h3>
+							 <div><i class="far fa-calendar-alt pr-1"></i>October 28, 2021</div> 
+								<p>Machine Learning uses increase from 28 october.</p> </div>
+							<a href="" style="color: #e74c3c;"> Read More <i class="fas fa-angle-double-right"></i></a>
+
+					</div>
+					<div class="col-md-3">
+						<div class="news-post">
+							<img src="annie-spratt-hCb3lIB8L8E-unsplash.jpg"height="120" width="245">
+							<h3><a href="">Artificial Intelligence</a></h3>
+							<div> <i class="far fa-calendar-alt pr-1"></i>December 15, 2021 </div>
+								<p>Our company's AI production is considered the best in Top 10.</p></div>
+							<a href="" style="color: #e74c3c;"> Read More <i class="fas fa-angle-double-right"></i></a>
+							
+					</div>
+					<div class="col-md-3">
+						<div class="news-post">
+							<img src="luca-bravo-XJXWbfSo2f0-unsplash.jpg"height="120" width="245">
+							<h3> <a href=""> Develoment Field</a></h3>
+						    <div><i class="far fa-calendar-alt pr-1"></i>January 3, 2022 </div>
+						    	<p>We gave 3 big projects to the government</p></div>
+							<a href="" style="color: #e74c3c;"> Read More <i class="fas fa-angle-double-right"></i></a>
+
+					</div>
+					<div class="col-md-3">
+						<div class="news-post">
+							<img src="arlington-research-nFLmPAf9dVc-unsplash.jpg"height="120" width="245">
+							<h3><a href="">Robitics Success</a></h3>
+							<div><i class="far fa-calendar-alt pr-1"></i>January 24, 2022</div>
+								<p>We got a big Success in robotics in 24 January.</p>
+							<a href="" style="color: #e74c3c;"> Read More <i class="fas fa-angle-double-right"></i></a>
+							
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+     <div id="footer" style="background: rgb(40, 84, 120); color: white;">
+		<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<div class="footer-heading">
+							<h3 class="section-heads" >About Company</h3>
+							<p style="text-align: justify;">“A Great Company is a place where employees can do great things, while having a great time with others who they like and respect, and all the while know that their work is serving a purpose and confirming their reason to stay each day”.</p>
+							<p>Barrios lists which enable geniuses to come up with and develop new and fruitful ideas:</p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="footer-heading">
+							<h3 class="section-heads">Latest News</h3>
+							<ul class="uutt">
+							<li>Achievement In Machine learning</li>
+							<li>Achievement In Artificial Intelligence</li>
+							<li>Achievement In Developing Field</li>
+							<li>Achievement In Robotics Engineering</li>
+							<li>Achievement In web Engineering</li>
+							<li>Achievement In Android Engineering</li>
+							<ul>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="footer-heading">
+							<h3 class="section-heads">Company Address</h3>
+							<address>
+								<b>$ixto, Inc.</b>
+								Sector 25, Greator Noida<br>
+								Uttar Predesh, India  201301.<br>
+								Phone No. : (123) 456-7890
+							</address>
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+</div>
+
+
+<div id="footer" style="background: rgb(26, 35, 50); color: white; height:40px; padding-top: 6px;">
+<div class="container">
+	<div class="row">
+		<div class="col-md-6">
+			copyright@2022 $ixto Inc.
+		</div>
+		<div class="col-md-6">
+		<ul id="social-icons" class="float-md-right">
+			<li> $ixto <a class="fab fa-uncharted"> </a></li> </ul>
+		</div>
+			
+		</div>
+	</div>
+</div>
+</body>
+</html>

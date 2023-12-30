@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="file:///Users/laxminarayansharma/Desktop/Bootstrap/fontawesome-free-5.15.4-web/css/all.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>grid</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<style type="text/css">
+	.container{
+		border: 0px solid green;
+	}
+	.row{
+		border: 0px solid red;
+	}
+	.col,.col-1,.col-2,.col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-8,.col-10,.col-11,.col-12{
+		border: 0px solid yellowgreen;
+	}
+	body{
+		background: lightgray;
+	}
+	#header{
+           background: orange;
+	}
+	#menu{
+		    background: pink;
+	}
+	#content{
+			background: wheat;
+	}
+	#content_b{
+		background: lightyellow;
+	}
+	#sidebar{
+			 background: lightblue;
+	}
+	#footer{
+			 background: orange;
+	}
+	#menu ul{
+		list-style: none;
+	}
+</style>
+</head>
+<body>
+<div class="container">
+	<div class="row">
+         <div class="col-12" id="header">
+         	<h1>Websites Name</h1>
+         </div>
+    </div>
+    <div class="row">
+         <div class="col-12" id="menu">
+         	<ul>
+         		<li> <i class="fas fa-home"></i> <a href="#">Home</a></li>
+         		<li><i class="fas fa-address-card"></i> <a href="">About Us</a></li>
+         		<li> <i class="fab fa-envira"></i><a href="">Gallery</a></li>
+         		<li> <i class="fab fa-product-hunt"></i> <a href="">Products</a></li>
+         		<li> <i class="fas fa-id-card-alt"></i> <a href="">Contact Us</a></li>
+         	</ul>
+         </div>
+    </div>
+    <div class="row">
+    	<div class="col-md-3" id="sidebar"> <!-- col-md-4 -> ye medium,large,extralarge pr col-8 hi rahega but small pr eski width 100%(col-12) ho jaeygi jisse ye niche aa jaega.-->
+         	<ul>
+         		<li> <a href="">Home</a></li>
+         		<li> <a href="">About Us</a></li>
+         		<li> <a href="">Gallery</a></li>
+         		<li> <a href="">Products</a></li>
+         		<li> <a href="">Contact Us</a></li>
+         	</ul>
+         </div>
+         <div class="col-md-6" id="content">
+         	<h2>Sub Heading</h2>
+         	<p>A car (or automobile) is a wheeled motor vehicle used for transportation. Most definitions of cars say that they run primarily on roads, seat one to eight people, have four wheels, and mainly transport people rather than goods.[2][3]
+
+Cars came into global use during the 20th century, and developed economies depend on them. The year 1886 is regarded as the birth year of the car when German inventor Karl Benz patented his Benz Patent-Motorwagen.[1][4][5] Cars became widely available in the early 20th century. One of the first cars accessible to the masses was the 1908 Model T, an American car manufactured by the Ford Motor Company. Cars were rapidly adopted in the US, where they replaced animal-drawn carriages and carts.[6] In Europe and other parts of the world, demand for automobiles did not increase until after World War II.[6]</p>
+         </div>
+         
+         <div class="col-md-3" id="sidebar"> <!-- col-md-4 -> ye medium,large,extralarge pr col-8 hi rahega but small pr eski width 100%(col-12) ho jaeygi jisse ye niche aa jaega.-->
+         	<ul>
+         		<li> <a href="">Home</a></li>
+         		<li> <a href="">About Us</a></li>
+         		<li> <a href="">Gallery</a></li>
+         		<li> <a href="">Products</a></li>
+         		<li> <a href="">Contact Us</a></li>
+         	</ul>
+         </div>
+    </div>
+    
+    <div class="row">
+         <div class="col-12" id="content_b">
+         	<h2>About sports cars</h2>
+         	<p>Definitions of sports cars often relate to how the car design is optimised for dynamic performance,[2][3] without any specific minimum requirements; both a Triumph Spitfire and Ferrari 488 Pista can be considered sports cars, despite vastly different levels of performance. Broader definitions of sports cars include cars "in which performance takes precedence over carrying capacity",[4] or that emphasise the "thrill of driving"[5] or are marketed "using the excitement of speed and the glamour of the (race)track"[6] However, other people have more specific definitions, such as "must be a two-seater or a 2+2 seater"[7] or a car with two seats only.[8][9]</p>
+         </div>
+     </div>
+         <div class="row" id="footer">
+         <div class="col-12">
+         	@copyright 2022
+         </div>
+    </div>
+    </div>
+</body>
+</html>
